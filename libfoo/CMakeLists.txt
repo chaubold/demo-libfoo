@@ -6,5 +6,5 @@ file(GLOB_RECURSE HEADERS include/*.h)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable(libfoo SHARED ${SOURCES} ${HEADERS})
+add_library(libfoo SHARED ${SOURCES} ${HEADERS})
 #target_link_libraries(libfoo someStaticLib)
