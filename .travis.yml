@@ -11,7 +11,6 @@ script:
     - conan create . chaubold/dev
 after_success:
     #if: ((tag =~ /^release-.*/) AND (branch = master))
-    script: 
-        - conan remote add chaubold https://api.bintray.com/conan/chaubold/demo
-        - conan user -p ${CONAN_API_KEY} -r chaubold chaubold
-        - conan upload -r chaubold "*"
+    - conan remote add chaubold https://api.bintray.com/conan/chaubold/demo
+    - conan user -p ${CONAN_API_KEY} -r chaubold chaubold
+    - conan upload -r chaubold "*"
