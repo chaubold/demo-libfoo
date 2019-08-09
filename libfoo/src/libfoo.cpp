@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "libfoo.h"
+#include "libfoo/libfoo.h"
 
 namespace libfoo
 {
