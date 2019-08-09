@@ -26,7 +26,7 @@ class LibfooConan(ConanFile):
         # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
-        self.copy("*.h", dst="include/libfoo", src="libfoo/include")
+        self.copy("*.h", dst="include/libfoo", src="libfoo/include/libfoo")
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
