@@ -11,6 +11,6 @@ namespace libfoo
 
 	int answer_to_question_of_life()
 	{
-		return 43;
+		return 42;
 	}
 }
